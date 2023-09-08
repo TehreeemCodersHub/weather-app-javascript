@@ -113,7 +113,7 @@
         
         <div class="w-full max-w-xs">
           
-            <form class="bg-white shadow-md rounded  px-8 pt-6 pb-8 mb-4" action="submit.html" method="post" name ="myform" onsubmit="return formValidation()" >
+            <form class="bg-white shadow-md rounded  px-8 pt-6 pb-8 mb-4"  method="post" name ="myform" onsubmit="return formValidation()" >
             
                  <img src="template/logo.png" class="logo pl-12 pb-4" />
             
@@ -124,7 +124,8 @@
               </label>
 
               <input class="shadow  border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="fname" id="username" type="text" placeholder="Username">
-               <p class="" > Error message </p>
+              <span></span> 
+
             </div>
 
 
@@ -134,8 +135,8 @@
               <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
                 Email
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name = 'email' type="email" placeholder="Email">
-              <p> Error message </p> 
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name = 'email' type="text" placeholder="Email">
+              <span></span>
               
             </div>
 
@@ -144,20 +145,13 @@
                 Password
               </label>
               <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="******************">
-              <p> Error message </p>
+              <span class="text-red-500"></span>
             </div>
 
-            <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="confirm-password">
-                Confirm Password
-              </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="confirm-password" name="confirmPasswrd" type="password" placeholder="******************">
-              <p> Error message </p>
-            </div>
 
             <div class="flex items-center justify-between">
               
-              <button  type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-24 ml-2 rounded focus:outline-none focus:shadow-outline" type="button">
+              <button  type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-24 ml-2 rounded focus:outline-none focus:shadow-outline" type="button" onclick= "clearInput()">
                 Sign In
               </button>
             
@@ -212,7 +206,7 @@
     </div>
   
     <div class="mt-6 w-full grid grid-cols-4 grid-rows-5 gap-4 bg-blue-toogle item-mutavel p-6 rounded-md">
-      <button class="number-btn text-white bg-black rounded py-2 " >7</button>
+      <button class="number-btn text-white bg-black rounded py-2 " value="7" >7</button>
       <button class="number-btn  text-white bg-black  rounded py-2 " >8</button>
       <button class="number-btn   text-white bg-black " >9</button>
       <button class="dell-btn bg-blue-key number-btn text-white bg-black border-blue-key-shadow item-mutavel" >DEL</button>
