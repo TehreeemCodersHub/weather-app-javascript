@@ -42,7 +42,7 @@
             </div>
 
             <div>
-                <img src="template/logo.png"  />
+                <!-- <img src="template/logo.png"  /> -->
             </div>
 
         
@@ -86,103 +86,7 @@
 
   </nav>
 
-
-
-
-
-
-
-
-
     <br>
-    <!-- End of navbar-->
-
-    <!-- <div>
-        <input class="w-full border-2" id="change" placeholder="enter Name" />
-    </div>
-
-    <br>
-
-    <button class="bg-slate-400" onclick="changeBorder()">Click me</button>
- -->
-
-
- <section  >
-    <!-- Start of form -->
-    <div id="register-container" class="flex  items-center justify-center">
-        
-        <div class="w-full max-w-xs">
-          
-            <form class="bg-white shadow-md rounded  px-8 pt-6 pb-8 mb-4"  method="post" name ="myform" onsubmit="return formValidation()" >
-            
-                 <img src="template/logo.png" class="logo pl-12 pb-4" />
-            
-            <div class="my-4">
-
-              <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
-                Username
-              </label>
-
-              <input class="shadow  border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="fname" id="username" type="text" placeholder="Username">
-              <span></span> 
-
-            </div>
-
-
-
-                <!-- 2nd input field -->
-            <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                Email
-              </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name = 'email' type="text" placeholder="Email">
-              <span></span>
-              
-            </div>
-
-            <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                Password
-              </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="******************">
-              <span class="text-red-500"></span>
-            </div>
-
-
-            <div class="flex items-center justify-between">
-              
-              <button  type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-24 ml-2 rounded focus:outline-none focus:shadow-outline" type="button" onclick= "clearInput()">
-                Sign In
-              </button>
-            
-            </div>
-
-            <div class="flex items-center justify-between mt-4">
-              <p class="inline-block align-baseline text-sm text-blue-500">Already have an account? 
-                
-                <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800  ">
-                  Sign in
-                </a>
-
-
-              </p>
-           
-            </div>
-
-          </form>
-
-
-
-          <p class="text-center text-gray-500 text-xs">
-            &copy;2020 Banking App by Duomly. All rights reserved.
-          </p>
-        </div>
-    
-    </div>
-    
-
-
-</section>
 
 
 
@@ -200,30 +104,30 @@
        </div>
     </div>
   
-    <div class="mt-6 px-5">
-        <input class="py-5 w-full rounded-lg " />
+    <div class="mt-6 px-5 display">
+        <input class="py-5 w-full rounded-lg input text-right pr-5 " id="result" type = "text" name="display" />
       <!-- <p class="bg-black item-mutavel inline-block text-right px-5 py-8 w-full text-white  text-3xl" id="screen"></p> -->
     </div>
   
     <div class="mt-6 w-full grid grid-cols-4 grid-rows-5 gap-4 bg-blue-toogle item-mutavel p-6 rounded-md">
-      <button class="number-btn text-white bg-black rounded py-2 " value="7" >7</button>
-      <button class="number-btn  text-white bg-black  rounded py-2 " >8</button>
-      <button class="number-btn   text-white bg-black " >9</button>
-      <button class="dell-btn bg-blue-key number-btn text-white bg-black border-blue-key-shadow item-mutavel" >DEL</button>
-      <button class="number-btn   text-white bg-black   rounded py-2 " >4</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " >5</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " >6</button>
-      <button class="number-btn  text-white bg-black   rounded py-2 ">+</button>
-      <button class="number-btn  text-white bg-black   rounded py-2 " >1</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " >2</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " >3</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 ">-</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 ">.</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " >0</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 ">/</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " >x</button>
+      <button class="number-btn text-white bg-black rounded py-2  " value="7" onclick="display('7')"  >7</button>
+      <button class="number-btn  text-white bg-black  rounded py-2  "  value="7" onclick="display('8')"    >8</button>
+      <button class="number-btn   text-white bg-black " value="9" onclick="display('9')" >9</button>
+      <button class="dell-btn bg-blue-key number-btn text-white bg-black border-blue-key-shadow item-mutavel" onclick="display('DEL')"  >DEL</button>
+      <button class="number-btn   text-white bg-black   rounded py-2 " value="4" onclick="display('4') "  >4</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 "  value="5" onclick="display('5')"  >5</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 "  value="6" onclick="display('6')"  >6</button>
+      <button class="number-btn  text-white bg-black   rounded py-2 " value="+" onclick="display('+') " >+</button>
+      <button class="number-btn  text-white bg-black   rounded py-2 "  value="1" onclick="display('1')" >1</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 "  value="2" onclick="display('2')" >2</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 "  value="3" onclick="display('3')" >3</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 " value="-" onclick="display('-')" >-</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 " value="." onclick="display('.')" >.</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 "  value="0" onclick="display('0')">0</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 " value="/" onclick="display('/')" >/</button>
+      <button class="number-btn   text-white bg-black  rounded py-2 " value="x" onclick="display('*')" >*</button>
       <button class="dell-btn number-btn col-span-2  text-white bg-black bg-blue-key border-blue-key-shadow item-mutavel" onclick="deleteAll()">RESET</button>
-      <button class="result-btn number-btn col-span-2 text-white bg-black  bg-red-key border-red-shadow item-mutavel" onclick="resultCalc()">=</button>
+      <button class="s number-btn col-span-2 text-white bg-black "  value="=" onclick="solve()" >=</button>
     </div>
   
     <div class="attribution mt-12 text-white bg-black p-2">
@@ -235,8 +139,95 @@
 
 
 </section>
+
+
+<br>
+<br>
+
+<div class="bg-slate-400  h-2/3 min-h-screen items-center justify-center">
     
-    
+
+        <div class = 'bg-white mx-auto w-1/2 pt-6 flex '>
+            
+            <form class="mt-6 flex-col w-full px-12 ">
+                  
+                
+         <div class="flex justify-center items-center py-6  ">
+            <h1  class="text-black font-bold text-5xl" >Register </h1>
+         </div>
+
+                <div class="my-4 w-full">
+                   <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
+                      Username
+                    </label>
+                    <input class="  border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="fname" id="username" type="text" placeholder="Username">
+                    <span></span>
+                 </div>
+
+                 <div class="mb-4" >
+                    <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
+                        First Name
+                      </label>
+                      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="fname" id="fname" type="text" placeholder="Username">
+                      <span></span>
+
+                 </div>
+
+
+                 <div class="mb-4" >
+                    <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
+                        lastName
+                      </label>
+                      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="lname" id="lname" type="text" placeholder="Username">
+                      <span></span>
+                 </div>
+
+                 <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                        Email
+                      </label>
+                      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name = 'email' type="text" placeholder="Email">
+                      <span></span>
+                     
+                 </div>
+
+                 <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                      Password
+                    </label>
+                    <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="******************">
+                    <span class="text-red-500"></span>
+                </div>
+
+                <div class="mb-4" >
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Confirm password
+                      </label>
+                      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cpassword" name="cpassword" type="password" placeholder="******************">
+                      <span class="text-red-500"></span> 
+                </div>
+      
+                   <div class="mx-auto">
+
+                 <div class="flex justify-center my-7">
+                    <button  type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-24 ml-2 rounded focus:outline-none focus:shadow-outline" type="button" onclick= "clearInput()">
+                        Register Now
+                      </button>
+                 </div>  
+              
+           
+                   
+                    </div> 
+        
+             </form>
+        </div>
+     
+
+
+</div>
+
+
+
 
 
 
