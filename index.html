@@ -86,141 +86,62 @@
 
 </nav>
 
-    <br>
+<br>
 
 
 
-<!-- now making the calculator  -->
-<section class = ' mt-4 min-h-screen'>
-    
-  <div class="p-8 lg:pt-12 xl:pt-14 max-w-xl bg-slate-400 m-auto">
-
-    <div class="flex justify-between items-center w-full">
-      <h1 class="text-white bg-black p-4 item-mutavel ml-8 text-3xl">calc</h1>
-      <div class="flex items-center">
-
-        
-      
-       </div>
-    </div>
-  
-    <div class="mt-6 px-5 display">
-        <input class="py-5 w-full rounded-lg input text-right pr-5 " id="result" type = "text" name="display" />
-      <!-- <p class="bg-black item-mutavel inline-block text-right px-5 py-8 w-full text-white  text-3xl" id="screen"></p> -->
-    </div>
-  
-    <div class="mt-6 w-full grid grid-cols-4 grid-rows-5 gap-4 bg-blue-toogle item-mutavel p-6 rounded-md">
-      <button class="number-btn text-white bg-black rounded py-2  " value="7" onclick="display('7')"  >7</button>
-      <button class="number-btn  text-white bg-black  rounded py-2  "  value="7" onclick="display('8')"    >8</button>
-      <button class="number-btn   text-white bg-black " value="9" onclick="display('9')" >9</button>
-      <button class="dell-btn bg-blue-key number-btn text-white bg-black border-blue-key-shadow item-mutavel" onclick="display('DEL')"  >DEL</button>
-      <button class="number-btn   text-white bg-black   rounded py-2 " value="4" onclick="display('4') "  >4</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 "  value="5" onclick="display('5')"  >5</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 "  value="6" onclick="display('6')"  >6</button>
-      <button class="number-btn  text-white bg-black   rounded py-2 " value="+" onclick="display('+') " >+</button>
-      <button class="number-btn  text-white bg-black   rounded py-2 "  value="1" onclick="display('1')" >1</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 "  value="2" onclick="display('2')" >2</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 "  value="3" onclick="display('3')" >3</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " value="-" onclick="display('-')" >-</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " value="." onclick="display('.')" >.</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 "  value="0" onclick="display('0')">0</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " value="/" onclick="display('/')" >/</button>
-      <button class="number-btn   text-white bg-black  rounded py-2 " value="x" onclick="display('*')" >*</button>
-      <button class="dell-btn number-btn col-span-2  text-white bg-black bg-blue-key border-blue-key-shadow item-mutavel" onclick="deleteAll()">RESET</button>
-      <button class="s number-btn col-span-2 text-white bg-black "  value="=" onclick="solve()" >=</button>
-    </div>
-  
-    <div class="attribution mt-12 text-white bg-black p-2">
-      scientific by <a href="https://www.frontendmentor.io?ref=challenge" class="text-attribution-color" target="_blank">Create calculator</a>. 
-      Done it <a href="https://github.com/MatheusFelixTI" class="text-attribution-color">Tehreem</a>.
-    </div>
-  
- </div>
-
-
-</section>
 
 
 <br>
 <br>
 
-<div class="bg-slate-400  h-2/3 min-h-screen items-center justify-center">
-    
-
-        <div class = 'bg-white mx-auto w-1/2 pt-6 flex '>
-            
-            <form class="mt-6 flex-col w-full px-12 " id='forms' method="post" name ="myform" onsubmit="return formValidation()" >
-                  
-                
-         <div class="flex justify-center items-center py-6  ">
-            <h1  class="text-black font-bold text-5xl" >Register </h1>
-         </div>
-
-                <div class="my-4 w-full">
-                   <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
-                      Username
-                    </label>
-                    <input class="  border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="fname" id="username" type="text" placeholder="Username">
-                    <span></span>
-                 </div>
-
-                 <div class="mb-4" >
-                    <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
-                        First Name
-                      </label>
-                      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="fname" id="fname" type="text" placeholder="Username">
-                      <span></span>
-
-                 </div>
 
 
-                 <div class="mb-4" >
-                    <label class=" block text-gray-700 text-sm font-bold mb-2" for="username">
-                        lastName
-                      </label>
-                      <input class=" border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:outline-none" name="lname" id="lname" type="text" placeholder="Username">
-                      <span></span>
-                 </div>
 
-                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                        Email
-                      </label>
-                      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name = 'email' type="text" placeholder="Email">
-                      <span></span>
-                     
-                 </div>
-
-                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                      Password
-                    </label>
-                    <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="******************">
-                    <span class="text-red-500"></span>
-                </div>
-
-                <div class="mb-4" >
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                        Confirm password
-                      </label>
-                      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cpassword" name="cpassword" type="password" placeholder="******************">
-                      <span class="text-red-500"></span> 
-                </div>
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-semibold text-center mb-6">Weather forcasting</h1>
+  
+  <!-- Weather Card -->
+  <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
       
-              <div class="mx-auto">
+    <div class="flex w-full justify-between mb-5">
+      <!-- <input placeholder="Enter City name" class="w-full focus: outline-none input_search "  /> -->
+     <input id="input_search" placeholder="Enter City name" class="w-full focus:outline-none input_search" />
 
-                 <div class="flex justify-center my-7">
-                    <button  type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-24 ml-2 rounded focus:outline-none focus:shadow-outline" type="button" >
-                        Register Now
-                      </button>
-                 </div>  
-              </div> 
-        
-             </form>
-        </div>
-     
+      <!-- <button class="buttons"> <img  src="images/search.png" width="24" height="24" class="py-5 " />  </button>  -->
+     <button class="search_button" > <i class="fas fa-search"></i> </button>
+    </div>    
 
-
+      <div class="bg-blue-600 text-white p-9">
+          <h2 class="text-xl font-semibold city">New York, NY</h2>
+          <p class="text-sm">Monday, September 12, 2023</p>
+      </div>
+      
+      <!-- Weather Information -->
+      <div class="p-4">
+          <img src="images/clouds.png" alt="Weather Icon" class="mx-auto">
+          <p class="text-2xl font-semibold text-center mt-2 temp">25°C</p>
+          <p class="text-center">Partly Cloudy</p>
+      </div>
+      
+      <!-- Additional Weather Details -->
+      <div class="p-4">
+          <div class="flex justify-between">
+              <div>
+                  <p class="text-gray-500">Humidity</p>
+                  <p class="font-semibold humidity">65%</p>
+              </div>
+              <div>
+                  <p class="text-gray-500 wind ">Wind</p>
+                  <p class="font-semibold">10 km/h</p>
+              </div>
+          </div>
+          <div class="mt-4">
+              <p class="text-gray-500  ">UV Index</p>
+              <p class="font-semibold pressure">3</p>
+          </div>
+      </div>
+  </div>
 </div>
 
 
